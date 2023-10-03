@@ -1,15 +1,13 @@
-
-
 function MemberListing(props) {
   return (
     <>
       <h3>Üyelerimiz</h3>
       <ul>
-        {props.memberList.map((member,i) => {
+        {props.memberList.map((member, i) => {
           return (
             <li key={i}>
-              <a href={`mailto:${member.email}`}>{member.isim}</a> (
-              {member.rol})
+              <a href={`mailto:${member.email}`}>{member.isim}</a> ({member.rol}
+              )
             </li>
           );
         })}
